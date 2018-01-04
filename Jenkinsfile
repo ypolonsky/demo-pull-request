@@ -1,5 +1,4 @@
 node('label-default-lower') {
-  stages {
     stage('preprocessing') {
       steps {
         echo "environment ${env.GIT_TAG}"
@@ -8,6 +7,5 @@ node('label-default-lower') {
         echo "environments ${env}"
       }
     }
-  }
 }
 
