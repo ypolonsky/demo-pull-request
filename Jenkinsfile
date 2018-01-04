@@ -3,7 +3,8 @@ node('label-default-lower') {
         echo "environment ${env.GIT_TAG}"
         echo "parameter ${params.GIT_TAG}"
         echo "parameters ${params}"
-        echo "environments ${env}"
+        echo ""
+        echo sh(returnStdout: true, script: 'env')
     }
 }
 
